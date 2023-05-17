@@ -2,22 +2,22 @@ package com.riyandifirman.cinemawiki.ui.screen.home
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.lifecycle.ViewModel
 import com.riyandifirman.cinemawiki.R
 import com.riyandifirman.cinemawiki.model.Movie
 
 class HomeViewModel : ViewModel() {
-    private val _listMovie = mutableStateListOf<Movie>()
-
-    val listMovie: SnapshotStateList<Movie> = _listMovie
+    private val _listMovie = mutableStateOf<List<Movie>>(emptyList())
+    val listMovie: State<List<Movie>> get() = _listMovie
 
     init {
-        _listMovie.addAll(getDummyListMovie())
+        getListMovie()
     }
 
-    private fun getDummyListMovie(): List<Movie> {
-        return listOf(
+    private fun getListMovie() {
+        _listMovie.value = listOf(
             Movie(1, R.drawable.movie_1, "The Fast and the Furious: Tokyo Drift", "2006", "6.0", "1h 44m", "Action, Crime, Thriller", "Justin Lim", "Chris Morgan", "Lucas Black, Sung Kang, Bow Wow", R.string.overview_movie1),
             Movie(2, R.drawable.movie_2, "Titanic", "1997", "7.9", "3h 15m", "Drama, Romance", "James Cameron", "James Cameron", "Leonardo DiCaprio, Kate Winslet, Billy Zane", R.string.overview_movie2),
             Movie(3, R.drawable.movie_3, "Dunkirk", "2017", "7.8", "1h 47m", "Action, Drama, History", "Christopher Nolan", "Christopher Nolan", "Fionn Whitehead, Tom Glynn-Carney, Jack Lowden", R.string.overview_movie3),
