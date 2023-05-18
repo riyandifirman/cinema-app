@@ -15,7 +15,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
@@ -148,21 +147,3 @@ fun DetailScreen(movie: Movie) {
             }
         }
     }
-
-@Preview(showBackground = true)
-@Composable
-fun DetailScreenPreview() {
-    DetailScreen(movie = Movie(
-        1,
-        com.riyandifirman.cinemawiki.R.drawable.movie_1,
-        "Tokyo Drift",
-        "1992",
-        "8.9",
-        "1h",
-        "Drama",
-        "Tim Robbins",
-        "Tim Robbins",
-        "Tim Robbins",
-        com.riyandifirman.cinemawiki.R.string.overview_movie1,
-    ))
-}
