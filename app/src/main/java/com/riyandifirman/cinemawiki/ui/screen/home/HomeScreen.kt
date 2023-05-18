@@ -4,18 +4,18 @@ import android.annotation.SuppressLint
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.riyandifirman.cinemawiki.component.MovieComponent
 import com.riyandifirman.cinemawiki.component.MyAppBar
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun HomeScreen(viewModel: HomeViewModel) {
+fun HomeScreen(navController: NavController, viewModel: HomeViewModel) {
     val movieList = viewModel.listMovie.value
 
     Scaffold(
         topBar = {
-            MyAppBar()
+            MyAppBar(navController)
         },
         content = {
             LazyColumn {

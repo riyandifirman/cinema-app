@@ -7,11 +7,10 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.riyandifirman.cinemawiki.ui.screen.home.HomeScreen
+import com.riyandifirman.cinemawiki.ui.MainApp
 import com.riyandifirman.cinemawiki.ui.screen.home.HomeViewModel
 import com.riyandifirman.cinemawiki.ui.theme.CinemaWikiTheme
 
@@ -28,7 +27,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    HomeScreen(viewModel = viewModel)
+                    MainApp()
                 }
             }
         }
@@ -39,6 +38,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     CinemaWikiTheme {
-        HomeScreen(viewModel = HomeViewModel())
+        MainApp()
     }
 }

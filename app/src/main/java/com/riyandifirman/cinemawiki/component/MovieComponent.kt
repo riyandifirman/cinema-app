@@ -13,10 +13,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import coil.compose.rememberImagePainter
 import com.riyandifirman.cinemawiki.model.Movie
 
 @Composable
 fun MovieComponent(movie: Movie) {
+    val drawableResId = movie.poster
+
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -31,7 +34,12 @@ fun MovieComponent(movie: Movie) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(movie.poster),
+                painter = rememberImagePainter(
+                    data = drawableResId,
+                    builder = {
+                        crossfade(true)
+                    }
+                ),
                 contentDescription = movie.title,
                 modifier = Modifier
                     .size(60.dp, 90.dp)
@@ -42,7 +50,12 @@ fun MovieComponent(movie: Movie) {
                     .width(320.dp)
                     .padding(start = 16.dp)
             ) {
-                Text(text = movie.title, style = MaterialTheme.typography.h6, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Text(
+                    text = movie.title,
+                    style = MaterialTheme.typography.h6,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(text = movie.years, style = MaterialTheme.typography.body1)
             }
@@ -58,7 +71,11 @@ fun MovieComponent(movie: Movie) {
                         contentDescription = "rating",
                         modifier = Modifier.size(12.dp)
                     )
-                    Text(text = movie.rating, style = MaterialTheme.typography.body2, modifier = Modifier.padding(start = 4.dp))
+                    Text(
+                        text = movie.rating,
+                        style = MaterialTheme.typography.body2,
+                        modifier = Modifier.padding(start = 4.dp)
+                    )
                 }
             }
         }
