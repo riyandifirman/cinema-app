@@ -121,7 +121,7 @@ class HomeViewModel : ViewModel() {
                 R.string.overview_movie8
             ),
             Movie(
-                10,
+                9,
                 R.drawable.movie_9,
                 "John Wick",
                 "2014",
@@ -134,7 +134,7 @@ class HomeViewModel : ViewModel() {
                 R.string.overview_movie9
             ),
             Movie(
-                11,
+                10,
                 R.drawable.movie_10,
                 "3 Idiots",
                 "2009",
@@ -147,7 +147,7 @@ class HomeViewModel : ViewModel() {
                 R.string.overview_movie10
             ),
             Movie(
-                12,
+                11,
                 R.drawable.movie_11,
                 "Cek Toko Sebelah",
                 "2016",
@@ -160,7 +160,7 @@ class HomeViewModel : ViewModel() {
                 R.string.overview_movie11
             ),
             Movie(
-                13,
+                12,
                 R.drawable.movie_12,
                 "Searching",
                 "2018",
