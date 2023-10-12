@@ -1,11 +1,10 @@
 # Cinema Wiki
-Cinema Wiki | Submission of Jetpack Compose Android | Bangkit 2023 Series
+Cinema Wiki | Submission of Juara Android 2023 Series <br>
+Build Android Apps with Jetpack Compose
 
-An application built in the learning process of Bangkit Academy 2023. This is a practical implementation in the class Learning to Build Android Apps with Jetpack Compose
-
-## Final Submission of Android Application
-### The Criteria
-Features that must be present in the app:
+## Submission of Juara Android 2023 Series
+### Features
+Features that present in the app:
 
 <b> 1. List Page </b> <br>
 - Display data in List format with a minimum number of 10 different items. Use LazyList/LazyGrid to arrange the data.
@@ -18,9 +17,7 @@ Features that must be present in the app:
   - There is additional information that is not the same as the list <br>
 
 <b> 3. About Page </b> <br>
-- Displays a photo of yourself, name and e-mail registered with Dicoding.
-- In accessing the about page, make sure there is a button that can be used to access the page. For how to access it, you can implement:
-  - By adding a special View element (can be a menu option, button, or tab) that contains the contentDescription "about_page" <br>
+- Displays a photo, name and e-mail
 
 ## Screenshot Application
 <b> Home Page </b> <br> <br>
