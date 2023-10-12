@@ -24,7 +24,7 @@ Features that present in the app:
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/316e81d8-30fb-4776-9a63-5de14bc85778" alt="Home Page" widht="500" height="500">
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/5dd642f7-ba31-4569-bb66-1bab7b1cfdb6" alt="Home Page" widht="500" height="500">
 
-<b> Detail User & About Page </b> <br> <br>
+<b> Detail & About Page </b> <br> <br>
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/3e6515ed-a7ab-4fe7-82a1-85599dc324d6" alt="Home Page" widht="500" height="500">
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/0134e36c-4451-4f74-b5c9-6bcb3a104075" alt="Home Page" widht="500" height="500">
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/0c77ab63-74ab-44f4-b0de-add5ee7660cb" alt="Home Page" widht="500" height="500">
