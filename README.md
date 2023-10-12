@@ -19,6 +19,14 @@ Features that present in the app:
 <b> 3. About Page </b> <br>
 - Displays a photo, name and e-mail
 
+## Application Installation Guide
+1. Go to https://github.com/riyandifirman/cinema-app
+2. Click on the Releases menu
+3. There is an initial release, which has the asset cinema-wiki.apk
+4. Click on the cinema-wiki.apk
+5. Downloading process will be start
+6. Install application
+
 ## Screenshot Application
 <b> Home Page </b> <br> <br>
 <img src="https://github.com/riyandifirman/cinema-wiki/assets/49358131/316e81d8-30fb-4776-9a63-5de14bc85778" alt="Home Page" widht="500" height="500">
